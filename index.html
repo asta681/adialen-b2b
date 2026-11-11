@@ -4,383 +4,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Adialen Professional Hair Care. Wholesale hair care products for beauty salons, hairdressers and distributors across Europe.">
-<title>Adialen Professional Hair Care | B2B Europe</title>
+<title>ADIALEN | Professional Hair Care Distribution</title>
+<meta name="description" content="ADIALEN – professional hair care brands and wholesale distribution for beauty salons and businesses across Europe.">
 <style>
-:root {
-  --dark:#25221f;
-  --gold:#b99a70;
-  --cream:#f7f3ed;
-  --white:#fff;
-}
-* {box-sizing:border-box;margin:0;padding:0}
-html {scroll-behavior:smooth}
-body {
-  font-family:Arial,Helvetica,sans-serif;
-  color:var(--dark);
-  line-height:1.6;
-  background:var(--white);
-}
-header {
-  background:#fff;
-  padding:20px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:10;
-  border-bottom:1px solid #eee;
-}
-.logo {
-  font-family:Georgia,serif;
-  font-size:28px;
-  letter-spacing:4px;
-  color:var(--dark);
-}
-.logo span {color:var(--gold)}
-nav {display:flex;gap:25px;align-items:center}
-nav a {
-  text-decoration:none;
-  color:var(--dark);
-  font-size:13px;
-  letter-spacing:1px;
-}
-nav a:hover {color:var(--gold)}
-.hero {
-  min-height:590px;
-  display:flex;
-  align-items:center;
-  padding:80px 9%;
-  background:
-  linear-gradient(90deg,rgba(25,22,20,.78),rgba(25,22,20,.15)),
-  url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1800&q=85') center/cover;
-  color:white;
-}
-.hero-content {max-width:650px}
-.eyebrow {
-  color:#e2c9a8;
-  letter-spacing:4px;
-  font-size:12px;
-  text-transform:uppercase;
-  margin-bottom:20px;
-}
-h1 {
-  font-family:Georgia,serif;
-  font-size:clamp(42px,6vw,72px);
-  font-weight:normal;
-  line-height:1.12;
-  margin-bottom:25px;
-}
-.hero p {font-size:17px;max-width:530px;margin-bottom:32px}
-.button {
-  display:inline-block;
-  padding:15px 28px;
-  background:var(--gold);
-  color:white;
-  text-decoration:none;
-  letter-spacing:1px;
-  font-size:12px;
-  border:0;
-  cursor:pointer;
-}
-.button:hover {background:#98784f}
-section {padding:85px 9%}
-.section-heading {text-align:center;max-width:720px;margin:0 auto 48px}
-.section-heading h2 {
-  font-family:Georgia,serif;
-  font-size:40px;
-  font-weight:normal;
-  margin-bottom:15px;
-}
-.section-heading p {color:#777}
-.about {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center;
-}
-.about-image {
-  min-height:410px;
-  background:url('https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=85') center/cover;
-}
-.about h2,.wholesale h2 {
-  font-family:Georgia,serif;
-  font-size:39px;
-  font-weight:normal;
-  margin-bottom:20px;
-}
-.about p {color:#666;margin-bottom:18px}
-.products {background:var(--cream)}
-.product-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
-}
-.product-card {background:white;padding-bottom:25px}
-.product-image {height:250px;background-size:cover;background-position:center}
-.product-card h3 {
-  font-family:Georgia,serif;
-  font-size:23px;
-  font-weight:normal;
-  padding:22px 22px 8px;
-}
-.product-card p {padding:0 22px;color:#777;font-size:14px}
-.product-card:nth-child(1) .product-image {
-  background-image:url('https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80');
-}
-.product-card:nth-child(2) .product-image {
-  background-image:url('https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=80');
-}
-.product-card:nth-child(3) .product-image {
-  background-image:url('https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=80');
-}
-.wholesale {background:#292521;color:white;text-align:center}
-.wholesale h2 {font-size:43px}
-.wholesale p {max-width:720px;margin:0 auto 28px;color:#ddd}
-.benefits {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-  margin-top:45px;
-}
-.benefit {border-top:1px solid #88765e;padding-top:20px}
-.benefit h3 {font-family:Georgia,serif;font-weight:normal;font-size:22px;margin-bottom:10px}
-.benefit p {font-size:14px;color:#ccc}
-.contact {background:var(--cream)}
-.contact-layout {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  max-width:1000px;
-  margin:auto;
-}
-.contact-info h2 {
-  font-family:Georgia,serif;
-  font-size:40px;
-  font-weight:normal;
-  margin-bottom:20px;
-}
-.contact-info p {color:#666;margin-bottom:20px}
-.contact-form {
-  background:white;
-  padding:30px;
-}
-.contact-form input,.contact-form select,.contact-form textarea {
-  width:100%;
-  padding:14px;
-  margin-bottom:14px;
-  border:1px solid #ddd;
-  font:14px Arial;
-  background:white;
-}
-.contact-form textarea {min-height:110px;resize:vertical}
-.contact-form button {width:100%}
-footer {
-  background:#211f1d;
-  color:#ccc;
-  padding:35px 9%;
-  text-align:center;
-  font-size:13px;
-}
-footer strong {
-  display:block;
-  color:white;
-  font-family:Georgia,serif;
-  font-size:25px;
-  letter-spacing:3px;
-  margin-bottom:10px;
-}
-@media(max-width:750px) {
-  header {padding:16px 5%;flex-wrap:wrap;gap:15px}
-  nav {gap:12px;flex-wrap:wrap}
-  nav a {font-size:11px}
-  .hero {min-height:520px;padding:65px 7%}
-  section {padding:65px 7%}
-  .about,.contact-layout {grid-template-columns:1fr}
-  .product-grid,.benefits {grid-template-columns:1fr}
-  .about-image {min-height:300px}
-  .section-heading h2 {font-size:33px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#39332d;background:#fffdf9}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 6%;background:#fffdf9;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #00000008}
+.logo{font-family:Georgia,serif;font-size:35px;letter-spacing:4px;color:#51443a}
+.logo small{display:block;font:10px Arial;letter-spacing:3px;text-align:center}
+nav{display:flex;gap:23px;align-items:center}
+nav a{color:#443b34;text-decoration:none;font-size:14px}
+a{color:inherit}
+button,.cta{background:#d9ad68;color:#fff;border:0;border-radius:30px;padding:13px 24px;text-decoration:none;cursor:pointer}
+.lang{border:1px solid #d9c7ad;background:transparent;color:#544638;padding:8px 12px}
+.hero{min-height:490px;padding:85px 7%;display:flex;align-items:center;background:linear-gradient(100deg,#f6eee4,#fffdf9 65%,#eee0cf)}
+.hero-content{max-width:570px}
+.hero h1{font:clamp(42px,6vw,72px) Georgia,serif;line-height:1.05;margin:0 0 15px;color:#51443a}
+.hero h2{font:17px Arial;letter-spacing:5px;font-weight:normal}
+.hero p{font:italic 19px Georgia;color:#786b5d;line-height:1.6}
+section{padding:65px 7%}
+.center{text-align:center}
+h2.section-title{font:36px Georgia,serif;color:#51443a;margin:0 0 15px}
+.sub{color:#83776b;line-height:1.7;max-width:700px;margin:0 auto 35px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;background:#f8f1e8;text-align:center}
+.feature{padding:22px 10px}
+.feature strong{display:block;font:19px Georgia;margin-bottom:8px}
+.brands{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}
+.brand{background:#f8f3ec;border:1px solid #eee2d3;padding:30px 12px;font:22px Georgia;text-align:center}
+.products{background:#fbf7f1}
+.product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px;margin-top:35px}
+.product{background:white;border-radius:12px;overflow:hidden;border:1px solid #eee5da}
+.product img{width:100%;height:280px;object-fit:cover;display:block}
+.product h3{font:23px Georgia;margin:20px}
+.product p{margin:0 20px 22px;color:#81766b;line-height:1.6}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px;margin-top:30px}
+.video-grid iframe{width:100%;aspect-ratio:9/16;border:0;border-radius:12px;background:#eee}
+.business{background:#eee4d7;text-align:center}
+.business p{max-width:700px;margin:15px auto 25px;line-height:1.7}
+.contact{background:#fffdf9;text-align:center}
+footer{padding:28px 7%;background:#51443a;color:white;text-align:center;line-height:1.8}
+footer a{color:white}
+@media(max-width:800px){
+header{flex-wrap:wrap;gap:15px}
+nav{order:3;width:100%;overflow-x:auto;padding:8px 0}
+nav a{white-space:nowrap}
+.hero{min-height:390px;padding:65px 7%}
+.features{grid-template-columns:repeat(2,1fr)}
+.brands{grid-template-columns:repeat(2,1fr)}
+.product-grid,.video-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
-
 <header>
-  <div class="logo">ADIALEN<span>.</span></div>
-  <nav>
-    <a href="#about">ABOUT</a>
-    <a href="#products">PRODUCTS</a>
-    <a href="#wholesale">B2B PARTNERS</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
+<div class="logo">ADIALEN<small>PROFESSIONAL HAIR CARE</small></div>
+<nav>
+<a href="#home" data-en="Home" data-lt="Pradžia">Home</a>
+<a href="#brands" data-en="Our Brands" data-lt="Prekių ženklai">Our Brands</a>
+<a href="#products" data-en="Collections" data-lt="Kolekcijos">Collections</a>
+<a href="#business" data-en="Wholesale & B2B" data-lt="Didmeninė prekyba">Wholesale & B2B</a>
+<a href="#contact" data-en="Contact" data-lt="Kontaktai">Contact</a>
+</nav>
+<button class="lang" onclick="toggleLanguage()" id="language">LT | Lietuvių</button>
 </header>
 
 <main>
-<section class="hero">
-  <div class="hero-content">
-    <div class="eyebrow">Professional Hair Care · B2B Europe</div>
-    <h1>Professional Hair Care for Beautiful Results</h1>
-    <p>
-      Discover Adialen professional hair care products.
-      We welcome beauty salons, hairdressers, retailers
-      and wholesale partners looking for new business opportunities.
-    </p>
-    <a class="button" href="#contact">BECOME OUR B2B PARTNER</a>
-  </div>
+<section class="hero" id="home">
+<div class="hero-content">
+<h1 data-en="Premium Hair Care" data-lt="Profesionali plaukų priežiūra">Premium Hair Care</h1>
+<h2 data-en="DISTRIBUTION – EUROPE" data-lt="PLATINIMAS – EUROPA">DISTRIBUTION – EUROPE</h2>
+<p data-en="Professional beauty solutions for salons, hairdressers and businesses." data-lt="Profesionalūs grožio sprendimai salonams, kirpėjams ir verslui.">Professional beauty solutions for salons, hairdressers and businesses.</p>
+<a class="cta" href="#business" data-en="Become Our B2B Partner →" data-lt="Tapkite mūsų B2B partneriu →">Become Our B2B Partner →</a>
+</div>
 </section>
 
-<section id="about" class="about">
-  <div class="about-image"></div>
-  <div>
-    <div class="eyebrow">ABOUT ADIALEN</div>
-    <h2>Beauty. Quality. Professional Care.</h2>
-    <p>
-      Adialen is a hair care brand offering professional
-      hair care products for the beauty industry.
-    </p>
-    <p>
-      Our focus is on building long-term business relationships
-      with professional salons, hairdressers, retailers and
-      distributors across Europe and international markets.
-    </p>
-    <p>
-      We are looking for business partners who value professional
-      hair care and want to grow together with Adialen.
-    </p>
-    <a class="button" href="#contact">CONTACT OUR TEAM</a>
-  </div>
+<section class="features">
+<div class="feature">✧<strong data-en="Professional Quality" data-lt="Profesionali kokybė">Professional Quality</strong></div>
+<div class="feature">◎<strong data-en="European Distribution" data-lt="Platinimas Europoje">European Distribution</strong></div>
+<div class="feature">◇<strong data-en="B2B Partnership" data-lt="B2B partnerystė">B2B Partnership</strong></div>
+<div class="feature">♡<strong data-en="Beauty Professionals" data-lt="Grožio profesionalams">Beauty Professionals</strong></div>
 </section>
 
-<section id="products" class="products">
-  <div class="section-heading">
-    <div class="eyebrow">OUR COLLECTION</div>
-    <h2>Adialen Hair Care</h2>
-    <p>
-      Professional hair care products for salon and retail
-      business partners.
-    </p>
-  </div>
-
-  <div class="product-grid">
-    <article class="product-card">
-      <div class="product-image"></div>
-      <h3>Professional Shampoos</h3>
-      <p>
-        Hair cleansing products for professional hair care
-        routines and everyday salon use.
-      </p>
-    </article>
-
-    <article class="product-card">
-      <div class="product-image"></div>
-      <h3>Hair Masks</h3>
-      <p>
-        Hair care masks designed to complement professional
-        hair care treatments.
-      </p>
-    </article>
-
-    <article class="product-card">
-      <div class="product-image"></div>
-      <h3>Hair Care Collection</h3>
-      <p>
-        Explore Adialen products and contact us to receive
-        information about the wholesale collection.
-      </p>
-    </article>
-  </div>
+<section class="center" id="brands">
+<h2 class="section-title" data-en="Our Brands" data-lt="Mūsų prekių ženklai">Our Brands</h2>
+<p class="sub" data-en="Discover professional hair care collections offered by ADIALEN." data-lt="Atraskite profesionalias plaukų priežiūros kolekcijas, kurias siūlo ADIALEN.">Discover professional hair care collections offered by ADIALEN.</p>
+<div class="brands">
+<div class="brand">ADIALEN Beauty</div>
+<div class="brand">TheMax</div>
+<div class="brand">A&D</div>
+<div class="brand">Professional Hair Care</div>
+</div>
 </section>
 
-<section id="wholesale" class="wholesale">
-  <div class="eyebrow">BUSINESS OPPORTUNITIES</div>
-  <h2>Let's Grow Together</h2>
-  <p>
-    Are you a beauty salon, hairdresser, professional beauty
-    retailer or distributor? Contact Adialen to discuss
-    wholesale cooperation and product availability.
-  </p>
-  <a class="button" href="#contact">REQUEST WHOLESALE INFORMATION</a>
-
-  <div class="benefits">
-    <div class="benefit">
-      <h3>For Beauty Salons</h3>
-      <p>Professional hair care products for salon businesses.</p>
-    </div>
-    <div class="benefit">
-      <h3>For Retailers</h3>
-      <p>Wholesale cooperation opportunities for beauty shops.</p>
-    </div>
-    <div class="benefit">
-      <h3>For Distributors</h3>
-      <p>Build a long-term partnership with Adialen.</p>
-    </div>
-  </div>
+<section class="products" id="products">
+<div class="center">
+<h2 class="section-title" data-en="Product Collections" data-lt="Produktų kolekcijos">Product Collections</h2>
+<p class="sub" data-en="Explore our hair care products for professional use." data-lt="Susipažinkite su profesionaliam naudojimui skirtais plaukų priežiūros produktais.">Explore our hair care products for professional use.</p>
+</div>
+<div class="product-grid">
+<article class="product">
+<img src="assets/themax-collection.jpg" alt="TheMax hair care collection">
+<h3>TheMax Hair Care</h3>
+<p data-en="Professional shampoos, conditioners and hair masks." data-lt="Profesionalūs šampūnai, kondicionieriai ir plaukų kaukės.">Professional shampoos, conditioners and hair masks.</p>
+</article>
+<article class="product">
+<img src="assets/ginger-collection.jpg" alt="Ginger hair care collection">
+<h3>Ginger Collection</h3>
+<p data-en="Hair care products presented in our collection." data-lt="Plaukų priežiūros produktai iš mūsų kolekcijos.">Hair care products presented in our collection.</p>
+</article>
+</div>
 </section>
 
-<section id="contact" class="contact">
-  <div class="contact-layout">
-    <div class="contact-info">
-      <div class="eyebrow">CONTACT ADIALEN</div>
-      <h2>Become Our Business Partner</h2>
-      <p>
-        Interested in Adialen professional hair care products?
-        Send us your business inquiry.
-      </p>
-      <p>
-        We welcome inquiries from beauty salons, hairdressers,
-        retailers and distributors in Europe and worldwide.
-      </p>
-      <p><strong>Website:</strong> www.adialen.com</p>
-    </div>
+<section class="center" id="videos">
+<h2 class="section-title" data-en="Discover ADIALEN" data-lt="Atraskite ADIALEN">Discover ADIALEN</h2>
+<p class="sub" data-en="Watch our videos and discover our beauty world." data-lt="Žiūrėkite mūsų vaizdo įrašus ir susipažinkite su mūsų grožio pasauliu.">Watch our videos and discover our beauty world.</p>
+<div class="video-grid">
+<iframe src="https://www.youtube.com/embed/qfQwQI8k-sk" title="ADIALEN video 1" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/EEheYTx8rhc" title="ADIALEN video 2" allowfullscreen></iframe>
+</div>
+</section>
 
-    <form class="contact-form" id="partnerForm">
-      <input name="company" placeholder="Company / Salon Name" required>
-      <input name="name" placeholder="Your Name" required>
-      <input name="email" type="email" placeholder="Business Email" required>
-      <input name="country" placeholder="Country" required>
-      <select name="business" required>
-        <option value="">Your Business Type</option>
-        <option>Beauty Salon</option>
-        <option>Hairdresser</option>
-        <option>Beauty Retailer</option>
-        <option>Wholesale Distributor</option>
-        <option>Other Business</option>
-      </select>
-      <textarea name="message" placeholder="Tell us about your business and cooperation interests"></textarea>
-      <button class="button" type="submit">SEND BUSINESS INQUIRY</button>
-      <p style="font-size:11px;color:#888;margin-top:12px">
-        Your email application will open with your inquiry prepared.
-      </p>
-    </form>
-  </div>
+<section class="business" id="business">
+<h2 class="section-title" data-en="Your B2B Beauty Partner" data-lt="Jūsų B2B grožio partneris">Your B2B Beauty Partner</h2>
+<p data-en="ADIALEN welcomes cooperation with beauty salons, hairdressers, professional retailers and distributors across Europe. Contact us to discuss wholesale cooperation." data-lt="ADIALEN kviečia bendradarbiauti su grožio salonais, kirpėjais, profesionalios kosmetikos parduotuvėmis ir platintojais visoje Europoje. Susisiekite dėl didmeninio bendradarbiavimo.">ADIALEN welcomes cooperation with beauty salons, hairdressers, professional retailers and distributors across Europe. Contact us to discuss wholesale cooperation.</p>
+<a class="cta" href="#contact" data-en="Contact Us →" data-lt="Susisiekite →">Contact Us →</a>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="section-title" data-en="Contact ADIALEN" data-lt="Susisiekite su ADIALEN">Contact ADIALEN</h2>
+<p>MB ADIALEN</p>
+<p>Phone: <a href="tel:+37068692303">+370 686 92303</a></p>
+<p><a href="https://www.youtube.com/@adialenadialien3716" target="_blank">ADIALEN YouTube</a></p>
 </section>
 </main>
-
 <footer>
-  <strong>ADIALEN</strong>
-  Professional Hair Care · B2B Europe
-  <p style="margin-top:12px">© 2026 Adialen. All rights reserved.</p>
-  <p><a href="https://www.adialen.com" style="color:#d4b991">www.adialen.com</a></p>
+<strong>ADIALEN</strong><br>
+<span data-en="Professional Hair Care Distribution – Europe" data-lt="Profesionalios plaukų kosmetikos platinimas – Europa">Professional Hair Care Distribution – Europe</span><br>
+© ADIALEN
 </footer>
 
 <script>
-document.getElementById("partnerForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-  const form = new FormData(this);
-  const subject = encodeURIComponent("Adialen B2B Business Inquiry");
-  const body = encodeURIComponent(
-    "Company: " + form.get("company") + "\n" +
-    "Name: " + form.get("name") + "\n" +
-    "Email: " + form.get("email") + "\n" +
-    "Country: " + form.get("country") + "\n" +
-    "Business type: " + form.get("business") + "\n" +
-    "Message: " + form.get("message")
-  );
-  window.location.href =
-    "mailto:YOUR_EMAIL_HERE?subject=" + subject + "&body=" + body;
-});
+let currentLanguage="en";
+function toggleLanguage(){
+ currentLanguage=currentLanguage==="en"?"lt":"en";
+ document.documentElement.lang=currentLanguage;
+ document.querySelectorAll("[data-en]").forEach(el=>{
+  el.textContent=el.getAttribute("data-"+currentLanguage);
+ });
+ document.getElementById("language").textContent=
+ currentLanguage==="en"?"LT | Lietuvių":"EN | English";
+}
 </script>
-
 </body>
 </html>
